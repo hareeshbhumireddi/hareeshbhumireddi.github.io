@@ -53,6 +53,12 @@ a {
   color: inherit;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--cyan-light);
+  outline-offset: 4px;
+}
+
 img {
   display: block;
   width: 100%;
@@ -250,6 +256,9 @@ ul {
   color: var(--text);
   cursor: pointer;
   z-index: 100;
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
 section {
@@ -1424,6 +1433,31 @@ section {
   transition: var(--transition);
 }
 
+.project-card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-visual {
+  aspect-ratio: 16 / 10;
+  min-height: 0;
+  background-color: var(--bg3);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.project-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.visual-classroom {
+  background-color: var(--bg3);
+}
+
 .project-card:hover {
   transform: translateY(-8px);
   border-color: rgba(168, 85, 247, 0.3);
@@ -1546,6 +1580,24 @@ section {
   color: var(--text2);
   line-height: 1.7;
   margin-bottom: 1.5rem;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin: 0 0 1.8rem;
+  padding-left: 2rem;
+  list-style: disc;
+  color: var(--text2);
+  font-size: 1.3rem;
+  line-height: 1.65;
+}
+
+.project-note {
+  padding-left: 1.2rem;
+  border-left: 2px solid var(--amber);
+  font-size: 1.2rem !important;
 }
 
 .project-tags {
@@ -2345,6 +2397,10 @@ form {
     font-size: 56%;
   }
 
+  .scroll-indicator {
+    display: none;
+  }
+
   #menu {
     display: block;
   }
@@ -2435,5 +2491,34 @@ form {
   .hero-cta {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+.edu-grade {
+  margin-top: 1rem;
+  color: var(--text);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.timeline-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin: 1rem 0 1.5rem;
+  padding-left: 2rem;
+  list-style: disc;
+  color: var(--text2);
+  font-size: 1.3rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

@@ -26,7 +26,7 @@ if (window.matchMedia('(pointer: fine)').matches && cursorDot && cursorRing) {
 document.addEventListener('DOMContentLoaded', () => {
   if (typeof Typed !== 'undefined' && document.querySelector('.typing-text')) {
     new Typed('.typing-text', {
-      strings: ['AI/ML Systems', 'Computer Vision', 'Full Stack Apps', 'Web Experiences', 'Deep Learning Models'],
+      strings: ['Software Development', 'Python Applications', 'AI/ML Projects', 'Full-Stack Web Apps'],
       loop: true, typeSpeed: 65, backSpeed: 35, backDelay: 1800, startDelay: 600
     });
   }
@@ -40,11 +40,13 @@ if (menu && navbar) {
   menu.addEventListener('click', () => {
     menu.classList.toggle('fa-times'); menu.classList.toggle('fa-bars');
     navbar.classList.toggle('nav-toggle');
+    menu.setAttribute('aria-expanded', navbar.classList.contains('nav-toggle'));
   });
   document.querySelectorAll('.navbar a').forEach(link => {
     link.addEventListener('click', () => {
       menu.classList.add('fa-bars'); menu.classList.remove('fa-times');
       navbar.classList.remove('nav-toggle');
+      menu.setAttribute('aria-expanded', 'false');
     });
   });
 }
@@ -63,7 +65,7 @@ window.addEventListener('scroll', () => {
     link.classList.remove('active');
     if (link.getAttribute('href') === '#' + current) link.classList.add('active');
   });
-  if (menu && navbar) { menu.classList.add('fa-bars'); menu.classList.remove('fa-times'); navbar.classList.remove('nav-toggle'); }
+  if (menu && navbar) { menu.classList.add('fa-bars'); menu.classList.remove('fa-times'); navbar.classList.remove('nav-toggle'); menu.setAttribute('aria-expanded', 'false'); }
 }, { passive: true });
 if (scrollTopBtn) scrollTopBtn.addEventListener('click', (e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
@@ -278,6 +280,7 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && menu && navbar) {
     menu.classList.add('fa-bars'); menu.classList.remove('fa-times');
     navbar.classList.remove('nav-toggle');
+    menu.setAttribute('aria-expanded', 'false');
   }
 });
 
