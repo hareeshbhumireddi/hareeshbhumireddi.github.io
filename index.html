@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="Harish Bhumireddi, portfolio, full stack developer, AI developer, machine learning, computer vision">
-  <meta name="description" content="Harish Bhumireddi — AI/ML Engineer & Full-Stack Developer. JobShield AI | Smart Resume AI | SmartTraffic AI">
-  <title>Harish Bhumireddi — AI/ML & Full Stack Developer</title>
+  <meta name="keywords" content="Harish Bhumireddi, portfolio, software developer, Python developer, AI/ML developer">
+  <meta name="description" content="Harish Bhumireddi is a Computer Science graduate seeking entry-level opportunities in software development, Python development, and AI/ML.">
+  <title>Harish Bhumireddi — Software Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -26,8 +26,8 @@
   </div>
   <header id="header">
     <a href="#home" class="logo"><span class="logo-bracket">&lt;</span>HB<span class="logo-bracket">/&gt;</span></a>
-    <div id="menu" class="fas fa-bars"></div>
-    <nav class="navbar">
+    <button type="button" id="menu" class="fas fa-bars" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false"></button>
+    <nav class="navbar" id="primary-navigation">
       <ul>
         <li><a class="active" href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -35,6 +35,7 @@
         <li><a href="#ai-projects">AI Projects</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -47,16 +48,16 @@
       <div class="hero-orb orb-4"></div>
       <div class="grid-overlay"></div>
     </div>
-    <div id="particles-js"></div>
+    <canvas id="particles-js" aria-hidden="true"></canvas>
     <div class="hero-grid">
       <div class="hero-left">
-        <div class="hero-badge"><span class="badge-dot"></span><span>Available for Work</span></div>
+        <div class="hero-badge"><span class="badge-dot"></span><span>Seeking Entry-Level Opportunities</span></div>
         <h1 class="hero-title">
           <span class="line-reveal">Hi, I'm</span>
           <span class="line-reveal hero-name">Harish <em>Bhumireddi</em></span>
         </h1>
-        <p class="hero-subtitle">I build <span class="typing-text"></span></p>
-        <p class="hero-desc">AI/ML Engineer &amp; Full-Stack Developer crafting intelligent systems that solve real-world problems. 3x Hackathon Winner</p>
+        <p class="hero-subtitle">Interested in <span class="typing-text"></span></p>
+        <p class="hero-desc">Computer Science graduate based in Visakhapatnam, interested in software development, Python, and AI/ML opportunities.</p>
         <div class="hero-cta">
           <a href="#ai-projects" class="btn-primary"><span>View AI Projects</span><i class="fas fa-arrow-right"></i></a>
           <a href="https://drive.google.com/file/d/1pWPGKViYIEPaxvzicZJ8kzSFgZFgmT92/view?usp=sharing" target="_blank" class="btn-outline"><i class="fas fa-download"></i><span>Resume</span></a>
@@ -76,8 +77,8 @@
           <div class="hero-glow"></div>
           <img src="./assets/images/profile2.jpg" alt="Harish Bhumireddi" draggable="false">
           <div class="hero-card floating-card card-1"><i class="fas fa-brain"></i><span>94.7% Accuracy</span><small>JobShield AI</small></div>
-          <div class="hero-card floating-card card-2"><i class="fas fa-code"></i><span>3+ Internships</span><small>Industry Exp.</small></div>
-          <div class="hero-card floating-card card-3"><i class="fas fa-trophy"></i><span>3x Winner</span><small>Hackathons</small></div>
+          <div class="hero-card floating-card card-2"><i class="fas fa-code"></i><span>4 Internships</span><small>Hands-on Experience</small></div>
+          <div class="hero-card floating-card card-3"><i class="fas fa-trophy"></i><span>Hackathon Awards</span><small>INNOEXPO · NSRIT</small></div>
         </div>
       </div>
     </div>
@@ -96,10 +97,10 @@
         </div>
       </div>
       <div class="about-content">
-        <span class="about-role">Full Stack Developer &amp; AI/ML Engineer</span>
+        <span class="about-role">Computer Science Graduate · Entry-Level Developer</span>
         <h3 class="about-name">I'm Harish Bhumireddi</h3>
-        <p class="about-text">Passionate AI/ML Engineer and Full-Stack Developer based in Visakhapatnam, India. I recently completed my B.Tech in Computer Science Engineering from N.S. Raju Institute of Technology.</p>
-        <p class="about-text">I specialize in building intelligent systems powered by Machine Learning and Computer Vision — from fraud detection models achieving 94.7% accuracy to real-time traffic management with YOLOv8.</p>
+        <p class="about-text">Computer Science graduate with a strong foundation in Python, Java, SQL, and full-stack web development. Familiar with REST APIs, database management, and AI/ML concepts, with hands-on experience gained through internships and projects involving web applications, intelligent automation, and supply chain management systems. Eager to apply technical knowledge, strengthen problem-solving skills, and contribute to building reliable software solutions.</p>
+        <p class="about-text">Based in Visakhapatnam, Andhra Pradesh, I am seeking entry-level opportunities in Software Development, Python Development, and AI/ML Development.</p>
         <div class="about-info-grid">
           <div class="info-item"><div class="info-icon icon-purple-bg"><i class="fas fa-envelope"></i></div><div><span>Email</span><p>hareeshbhumireddi@gmail.com</p></div></div>
           <div class="info-item"><div class="info-icon icon-cyan-bg"><i class="fas fa-map-marker-alt"></i></div><div><span>Location</span><p>Visakhapatnam, India</p></div></div>
@@ -109,9 +110,9 @@
         <div class="about-stats">
           <div class="stat-item"><strong class="counter" data-target="10">0</strong><span>Projects</span></div>
           <div class="stat-divider"></div>
-          <div class="stat-item"><strong class="counter" data-target="3">0</strong><span>Internships</span></div>
+          <div class="stat-item"><strong class="counter" data-target="4">0</strong><span>Internships</span></div>
           <div class="stat-divider"></div>
-          <div class="stat-item"><strong class="counter" data-target="3">0</strong><span>Hackathon Wins</span></div>
+          <div class="stat-item"><strong class="counter" data-target="2">0</strong><span>Hackathon Wins</span></div>
         </div>
         <a href="https://drive.google.com/file/d/1IhpBowLt4uNwVdO9Kwp_ko_cVq7oMoGc/view?usp=sharing" target="_blank" class="btn-primary"><i class="fas fa-download"></i><span>Download Resume</span></a>
       </div>
@@ -123,15 +124,21 @@
     <h2 class="section-heading">Skills &amp; <em>Abilities</em></h2>
     <div class="skills-wrapper">
       <div class="skill-group">
-        <div class="skill-group-header"><div class="skill-group-icon icon-purple"><i class="fas fa-robot"></i></div><h3>AI &amp; Machine Learning</h3></div>
+        <div class="skill-group-header"><div class="skill-group-icon icon-purple"><i class="fas fa-robot"></i></div><h3>AI/ML &amp; Data Science</h3></div>
         <div class="skill-pills">
-          <span class="skill-pill pill-purple">Machine Learning</span> <span class="skill-pill pill-purple">YOLOv8</span><span class="skill-pill pill-purple">OpenCV</span><span class="skill-pill pill-purple">Computer Vision</span><span class="skill-pill pill-purple">Neural Networks</span><span class="skill-pill pill-purple">Data Analysis</span><span class="skill-pill pill-purple">NLP</span><span class="skill-pill pill-purple">Scikit-learn</span>
+          <span class="skill-pill pill-purple">Machine Learning Fundamentals</span><span class="skill-pill pill-purple">Pandas</span><span class="skill-pill pill-purple">NumPy</span><span class="skill-pill pill-purple">Matplotlib</span><span class="skill-pill pill-purple">TensorFlow</span><span class="skill-pill pill-purple">YOLOv8</span><span class="skill-pill pill-purple">OpenCV</span><span class="skill-pill pill-purple">Computer Vision</span><span class="skill-pill pill-purple">Neural Networks</span><span class="skill-pill pill-purple">Data Analysis</span><span class="skill-pill pill-purple">NLP</span><span class="skill-pill pill-purple">Scikit-learn</span>
         </div>
       </div>
       <div class="skill-group">
-        <div class="skill-group-header"><div class="skill-group-icon icon-cyan"><i class="fas fa-code"></i></div><h3>Technical Skills</h3></div>
+        <div class="skill-group-header"><div class="skill-group-icon icon-cyan"><i class="fas fa-code"></i></div><h3>Programming Languages</h3></div>
         <div class="skill-pills">
-          <span class="skill-pill pill-cyan">Java</span><span class="skill-pill pill-cyan">Python</span><span class="skill-pill pill-cyan">JavaScript</span><span class="skill-pill pill-cyan">SQL</span><span class="skill-pill pill-cyan">React.js</span><span class="skill-pill pill-cyan">Flask</span> <span class="skill-pill pill-cyan">HTML/CSS</span>
+          <span class="skill-pill pill-cyan">Python</span><span class="skill-pill pill-cyan">SQL</span><span class="skill-pill pill-cyan">HTML</span><span class="skill-pill pill-cyan">CSS</span><span class="skill-pill pill-cyan">JavaScript</span><span class="skill-pill pill-cyan">Java</span><span class="skill-pill pill-cyan">React</span><span class="skill-pill pill-cyan">PostgreSQL</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-header"><div class="skill-group-icon icon-amber"><i class="fas fa-wrench"></i></div><h3>Developer Tools &amp; Platforms</h3></div>
+        <div class="skill-pills">
+          <span class="skill-pill pill-cyan">Git</span><span class="skill-pill pill-cyan">GitHub</span><span class="skill-pill pill-cyan">Visual Studio Code</span><span class="skill-pill pill-cyan">Eclipse</span><span class="skill-pill pill-cyan">Figma</span><span class="skill-pill pill-cyan">WordPress</span><span class="skill-pill pill-cyan">Supabase</span>
         </div>
       </div>
       <div class="skill-group">
@@ -225,6 +232,14 @@
         <div class="project-img-wrap"><img src="./assets/images/projects/moto.PNG" alt="Food Ordering System" draggable="false"><div class="project-overlay"><a href="https://drive.google.com/file/d/1gQOa0xJaI6xgAt_-J1uO3YHBpeJaymvH/view?usp=sharing" class="overlay-btn" target="_blank"><i class="fas fa-play"></i></a><a href="https://github.com/hareeshbhumireddi/Food-ordering-system" class="overlay-btn" target="_blank"><i class="fab fa-github"></i></a></div></div>
         <div class="project-info"><span class="project-type type-frontend">Web · Frontend</span><h3>Food Ordering System</h3><p>Online platform for customers to browse menus, place orders, and track deliveries in real time.</p><div class="project-tags"><span>HTML/CSS</span><span>JavaScript</span><span>PHP</span></div><div class="project-btns"><a href="https://drive.google.com/file/d/1gQOa0xJaI6xgAt_-J1uO3YHBpeJaymvH/view?usp=sharing" class="proj-btn" target="_blank"><i class="fas fa-play"></i> Demo</a><a href="https://github.com/hareeshbhumireddi/Food-ordering-system" class="proj-btn proj-btn-outline" target="_blank"><i class="fab fa-github"></i> Code</a></div></div>
       </div>
+      <article class="project-card project-card-text">
+        <div class="project-visual visual-festival" aria-hidden="true"><i class="fas fa-people-group"></i><span>Community · Events · Giving</span></div>
+        <div class="project-info"><span class="project-type type-web">Community Platform</span><h3>Community Festival Management Portal</h3><p>A bilingual community festival portal for donation submissions, festival schedules, and public-facing financial information.</p><ul class="project-details"><li>Live site presents donation entry, public donation/expense information, and the festival program schedule</li></ul><p class="project-note">Project materials also describe donation verification and receipts, Supabase synchronization, and Gemini-assisted payment screenshot OCR; these workflows were not independently confirmed on the public page.</p><div class="project-tags"><span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>Node.js</span><span>Express.js</span><span>Supabase</span><span>PostgreSQL</span><span>Google Gemini 2.5 Flash</span></div><div class="project-btns"><a href="https://sree-rama-puram-vinayaka-chaturthi-portal.onrender.com/" class="proj-btn" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-up-right-from-square"></i> Live Demo</a></div></div>
+      </article>
+      <article class="project-card project-card-text">
+        <div class="project-visual visual-classroom" aria-hidden="true"><i class="fas fa-chalkboard-user"></i><span>Teaching · Learning · Progress</span></div>
+        <div class="project-info"><span class="project-type type-java">AI · Education</span><h3>Classroom Companion AI</h3><p>A college assistant Telegram bot combining academic help with teacher and student classroom workflows.</p><ul class="project-details"><li>Assignment help, study assistance, and career guidance</li><li>Class joining, assignments, submissions, and progress updates</li><li>AI-assisted assignment parsing, feedback, progress summaries, and deadline reminders</li><li>Database-backed classroom management and Flask dashboard pages</li></ul><div class="project-tags"><span>Python</span><span>Telegram Bot API</span><span>Flask</span><span>SQLAlchemy</span><span>SQLite</span><span>LLM APIs</span><span>PyJWT</span></div><div class="project-btns"><a href="https://github.com/hareeshbhumireddi/Classroom-Companion-AI" class="proj-btn proj-btn-outline" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View on GitHub</a></div></div>
+      </article>
     </div>
     <div class="view-more"><a href="https://github.com/hareeshbhumireddi" target="_blank" class="btn-outline-dark"><i class="fab fa-github"></i> View All on GitHub <i class="fas fa-arrow-right"></i></a></div>
   </section>
@@ -233,7 +248,7 @@
     <div class="section-tag">05 — Background</div>
     <h2 class="section-heading">My <em>Education</em></h2>
     <div class="education-grid">
-      <div class="edu-card"><div class="edu-img"><img src="./assets/images/educat/nsrit_college.jpg" alt="NSRIT" draggable="false"></div><div class="edu-content"><span class="edu-badge badge-purple">B.Tech</span><h3>Computer Science Engineering</h3><p>NS Raju Institute of Technology, Visakhapatnam</p><div class="edu-meta"><span><i class="fas fa-calendar"></i> 2021–2025</span><span class="edu-status">Completed</span></div></div></div>
+      <div class="edu-card"><div class="edu-img"><img src="./assets/images/educat/nsrit_college.jpg" alt="NSRIT" draggable="false"></div><div class="edu-content"><span class="edu-badge badge-purple">B.Tech</span><h3>Computer Science Engineering</h3><p>NS Raju Institute of Technology, Visakhapatnam</p><div class="edu-meta"><span><i class="fas fa-calendar"></i> 2021–2025</span><span class="edu-status">Completed</span></div><p class="edu-grade">CGPA: 8.18/10.0</p></div></div>
       <div class="edu-card"><div class="edu-img"><img src="./assets/images/educat/narayana_college.jpg" alt="Narayana Jr College" draggable="false"></div><div class="edu-content"><span class="edu-badge badge-cyan">Intermediate</span><h3>MPC — Science Stream</h3><p>Narayana Junior College, Visakhapatnam</p><div class="edu-meta"><span><i class="fas fa-calendar"></i> 2019–2021</span><span class="edu-status">Completed</span></div></div></div>
       <div class="edu-card"><div class="edu-img"><img src="./assets/images/educat/stanns_school.jpg" alt="St Ann's High School" draggable="false"></div><div class="edu-content"><span class="edu-badge badge-pink">SSC</span><h3>Schooling — SSC</h3><p>St. Ann's High School, Visakhapatnam</p><div class="edu-meta"><span><i class="fas fa-calendar"></i> 2018–2019</span><span class="edu-status">Completed</span></div></div></div>
     </div>
@@ -243,9 +258,10 @@
     <div class="section-tag">06 — Journey</div>
     <h2 class="section-heading">Work <em>Experience</em></h2>
     <div class="timeline">
+      <div class="timeline-item"><div class="timeline-dot dot-purple"></div><div class="timeline-card"><div class="timeline-header"><h3>TRIGINT SOLUTIONS</h3><span class="timeline-period">March 2026 – August 2026</span></div><p class="timeline-role"><i class="fas fa-brain"></i> Junior AI Developer</p><p class="timeline-desc">Contributed to SCM project work focused on an executive dashboard and financial intelligence.</p><ul class="timeline-highlights"><li>Worked around receivables, cash-flow visibility, and aging analysis.</li><li>Explored inventory insights, purchase order timelines, and financial commitments.</li><li>Project source and release details are not included in this portfolio repository, so these are presented as internship focus areas.</li></ul></div></div>
       <div class="timeline-item"><div class="timeline-dot dot-purple"></div><div class="timeline-card"><div class="timeline-header"><h3>TIEERA AUTOMATION</h3><span class="timeline-period">June 2023 – July 2023</span></div><p class="timeline-role"><i class="fas fa-microchip"></i> IoT Intern</p><p class="timeline-desc">Worked on Internet of Things solutions, embedded systems, and automation projects.</p><a href="https://drive.google.com/file/d/1Oly6n6s3VhAXRR9Sdi40yQp79tI9zftu/view?usp=drive_link" target="_blank" class="cert-btn"><i class="fas fa-certificate"></i> View Certificate</a></div></div>
       <div class="timeline-item"><div class="timeline-dot dot-cyan"></div><div class="timeline-card"><div class="timeline-header"><h3>THE WEBSITE MAKERS</h3><span class="timeline-period">June 2024 – July 2024</span></div><p class="timeline-role"><i class="fab fa-wordpress"></i> WordPress Web Developer</p><p class="timeline-desc">Developed and maintained WordPress websites, custom themes, and plugin integrations for clients.</p><a href="https://drive.google.com/file/d/1kr3IClSngh02yFpopogO41TgRSK8KQho/view?usp=drive_link" target="_blank" class="cert-btn"><i class="fas fa-certificate"></i> View Certificate</a></div></div>
-      <div class="timeline-item"><div class="timeline-dot dot-pink"></div><div class="timeline-card"><div class="timeline-header"><h3>BRAIN O VISION</h3><span class="timeline-period">July 2024 – Oct 2024</span></div><p class="timeline-role"><i class="fab fa-java"></i> Java Full Stack Developer</p><p class="timeline-desc">Built enterprise-level full-stack Java applications using Spring Boot, REST APIs, and front-end technologies.</p><a href="https://drive.google.com/file/d/1eYXOBdYlHMEhfcJpKmiW5RNv44KSu9b-/view?usp=sharing" target="_blank" class="cert-btn"><i class="fas fa-certificate"></i> View Certificate</a></div></div>
+      <div class="timeline-item"><div class="timeline-dot dot-pink"></div><div class="timeline-card"><div class="timeline-header"><h3>BRAIN O VISION</h3><span class="timeline-period">July 2024 – October 2024</span></div><p class="timeline-role"><i class="fab fa-java"></i> Java Full Stack Developer Intern</p><p class="timeline-desc">Developed role-based Java applications using Spring Boot, JDBC, MySQL, and REST APIs.</p><a href="https://drive.google.com/file/d/1eYXOBdYlHMEhfcJpKmiW5RNv44KSu9b-/view?usp=sharing" target="_blank" class="cert-btn"><i class="fas fa-certificate"></i> View Certificate</a></div></div>
     </div>
   </section>
 
@@ -286,7 +302,7 @@
     <div class="footer-inner">
       <div class="footer-left">
         <a href="#home" class="footer-logo"><span class="logo-bracket">&lt;</span>HB<span class="logo-bracket">/&gt;</span></a>
-        <p>Crafting intelligent systems &amp; seamless digital experiences. Let's connect and build something great!</p>
+        <p>Computer Science graduate exploring software development, Python, and AI/ML. Open to entry-level opportunities.</p>
         <div class="footer-socials">
           <a href="https://www.linkedin.com/in/harishbhumireddi" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           <a href="https://github.com/hareeshbhumireddi" target="_blank"><i class="fab fa-github"></i></a>
@@ -306,7 +322,7 @@
         <p><i class="fas fa-map-marker-alt"></i> Visakhapatnam, India</p>
       </div>
     </div>
-    <div class="footer-bottom"><p>Designed with ❤️ by <a href="https://www.linkedin.com/in/harishbhumireddi" target="_blank">Harish Bhumireddi</a> &copy; 2025</p></div>
+    <div class="footer-bottom"><p>Designed with ❤️ by <a href="https://www.linkedin.com/in/harishbhumireddi" target="_blank">Harish Bhumireddi</a> &copy; 2026</p></div>
   </footer>
 
   <a href="#home" id="scroll-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
