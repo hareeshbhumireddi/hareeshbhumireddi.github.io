@@ -100,9 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (typeof ScrollReveal !== 'undefined') {
     const sr = ScrollReveal({ origin: 'bottom', distance: '50px', duration: 900, delay: 100, easing: 'cubic-bezier(0.4,0,0.2,1)', reset: false });
     sr.reveal('.section-tag', { delay: 100 }); sr.reveal('.section-heading', { delay: 200 }); sr.reveal('.section-sub', { delay: 300 });
-    sr.reveal('.hero-badge', { delay: 200 }); sr.reveal('.hero-title', { delay: 350, origin: 'left' }); sr.reveal('.hero-subtitle', { delay: 450 });
-    sr.reveal('.hero-desc', { delay: 500 }); sr.reveal('.hero-cta', { delay: 600 }); sr.reveal('.hero-socials', { delay: 700 });
-    sr.reveal('.hero-img-wrapper', { delay: 300, origin: 'right' }); sr.reveal('.about-img-frame', { origin: 'left', delay: 200 });
+    sr.reveal('.about-img-frame', { origin: 'left', delay: 200 });
     sr.reveal('.about-content', { origin: 'right', delay: 300 }); sr.reveal('.info-item', { interval: 100 }); sr.reveal('.stat-item', { interval: 150 });
     sr.reveal('.ai-card', { interval: 150 }); sr.reveal('.skill-group', { interval: 100 }); sr.reveal('.project-card', { interval: 150 });
     sr.reveal('.edu-card', { interval: 150 }); sr.reveal('.timeline-item', { interval: 120 }); sr.reveal('.c-info-card', { interval: 100 });
